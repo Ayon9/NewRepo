@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        :root{
+            --primary-color:violet;
+            --secoundary_color:aqua;
+            --main-color:purple;
+            --bg-color:tomato;
+            --ex-color:purple;
+            --txt-color:white;
+            --color-red:50;
+        }
+        body{
+            background-color: var(--secoundary_color);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        header{
+            caret-color: aliceblue;
+            width: 100%;
+            height:auto;
+            background-color: bisque;
+        }
+        nav{
+            background-color: aquamarine;
+            display: flex;
+            justify-content: space-between;
+        }
+        ul{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            text-decoration: none;
+            padding-right: 50px;
+            margin-left: 50px;
+        }
+        ul li{
+            padding-right: 50px;
+            margin-left: 100px;
+            list-style: none;
+        }
+        ul li .flink{
+            width: 90px;
+            padding: 10px;
+            background-color: rgb(51, 39, 17);
+            color:rgb(255, 255, 255);
+            text-decoration: none;
+            border-radius:30px;
+        }
+        .flink:hover{
+            border-radius:0;
+            background-color: yellowgreen;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+        h2{
+            width:90px;
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            height: auto;
+            padding: 10px;
+        }
+        h2:hover{
+            width:90px;
+            background-color: rgb(255, 170, 85);
+            color:darkslategray;
+            cursor: pointer;
+            margin-left:30px;
+        }
+        aside{
+            width:300px;
+            height: 600px;
+            background-color: bisque;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            position: absolute;
+            top: 42px;
+        }
+        .menu{
+            background-color: tomato;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            position: absolute;
+            left: 35px;
+        }
+        .menu li{
+            margin-left: 15px;
+            padding: 15px;
+            width:5px;
+            left: 30px;
+        }
+        .slink{
+            width: 15px;
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            padding: 3px;
+        }
+        .slink:hover{
+            color: black;
+            background-image: radial-gradient(circle, rgb(215, 215, 245), white);
+            border-radius: 5px;
+        }
+        .calclu{
+            width: 500px;
+            height: 300px;
+            background-color: var(--bg-color);
+            display:grid ;
+            grid-template-columns: repeat(7, 1fr);
+            margin: auto;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            left: 800px;
+            top: 50px;
+            padding: 50px;
+        }
+        .wed{
+            padding-right: 1px;
+        }
+        .date{
+            width: 25px;
+            margin: 3px;
+            border:2px dashed var(--ex-color);
+            color: var(--txt-color);
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>ma<span>r</span>y</h2>
+            <ul>
+                <li><a href="https://dev.commicplan.com/" target="_blank" class="flink" color: var(--color-red-50);>Home</a></li>
+                <li><a href="https://dev.commicplan.com/" target="_blank" class="flink">Home</a></li>
+                <li><a href="https://dev.commicplan.com/" target="_blank" class="flink">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="dev">
+        <div class="calclu">
+  <div class="sat">sat</div>
+  <div class="sun">sun</div>
+  <div class="mon">mon</div>
+  <div class="thue">thues</div>
+  <div class="wed">wed</div>
+  <div class="thus">thus</div>
+  <div class="fri">fri</div>
+  <div class="date" onclick="myfuntion(1)">1</div>
+  <div class="date">2</div>
+  <div class="date">3</div>
+  <div class="date">4</div>
+  <div class="date">5</div>
+  <div class="date">6</div>
+  <div class="date">7</div>
+  <div class="date">8</div>
+  <div class="date">9</div>
+  <div class="date">10</div>
+  <div class="date">11</div>
+  <div class="date">12</div>
+  <div class="date">13</div>
+  <div class="date">14</div>
+  <div class="date">15</div>
+  <div class="date">16</div>
+  <div class="date">17</div>
+  <div class="date">18</div>
+  <div class="date">19</div>
+  <div class="date">20</div>
+  <div class="date">21</div>
+  <div class="date">22</div>
+  <div class="date">23</div>
+  <div class="date">24</div>
+  <div class="date">25</div>
+  <div class="date">26</div>
+  <div class="date">27</div>
+  <div class="date">28</div>
+  <div class="date">29</div>
+  <div class="date">30</div>
+</div>
+        <aside>
+            <ul class="menu">
+                <li class="new"><a href="https://dev.commicplan.com/"class="slink" target="_blank">menu</a></li>
+                <li class="new"><a href="https://dev.commicplan.com/"class="slink" target="_blank">menu</a></li>
+                <li class="new"><a href="https://dev.commicplan.com/"class="slink" target="_blank">menu</a></li>
+            </ul>
+        </aside>
+    </div>
+    <script>
+        function myfuntion(pass){
+            return; pass
+        }
+    </script>
+</body>
+</html>
